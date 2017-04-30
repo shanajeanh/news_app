@@ -1,10 +1,12 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ArticleNavigator from './components/ArticleNavigator';
+import data from './constants/data';
 
 $(function() {
   ReactDOM.render(
-    <h1>Boo yaa</h1>,
+    <ArticleNavigator data={data} />,
     document.getElementById('app')
   );
 });
